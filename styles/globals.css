@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00d1d1;
+  --color-primary-dark: #00a3a3;
+  --color-background-light: #f5f8f8;
+  --color-background-dark: #0f2323;
+  --color-surface-dark: #162a2a;
+  --color-surface-darker: #0a1717;
+
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  --animate-shimmer: shimmer 2s infinite;
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+
+/* Özel Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #273a3a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #395656;
+}
+
+body {
+  background-color: var(--color-background-dark);
+  color: #e2e8f0;
+  overflow: hidden;
+  /* Sayfa taşmasını engellemek için */
+}
+
+/* Checkbox Rengi */
+input[type="checkbox"] {
+  accent-color: var(--color-primary);
+}
