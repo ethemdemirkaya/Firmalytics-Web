@@ -1,40 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 Firmalytics PRO
 
-## Getting Started
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Next.js](https://img.shields.io/badge/Next.js-13+-black)
+![Puppeteer](https://img.shields.io/badge/Puppeteer-Scraping-orange)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-06B6D4)
 
-First, run the development server:
+**Firmalytics PRO**, Google Maps üzerinden belirlediğiniz konum ve anahtar kelimelere göre işletmeleri tarayan, web sitelerini analiz ederek iletişim bilgilerini (E-posta, Telefon, LinkedIn) bulan ve verileri Excel formatında raporlayan gelişmiş bir veri madenciliği aracıdır.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Proje Ekran Görüntüsü](images/MainPhoto.png)
+*(Buraya projenin bir ekran görüntüsünü eklerseniz çok havalı durur)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Özellikler
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- 🌍 **Google Maps Entegrasyonu:** Konum ve sektör bazlı sınırsız işletme taraması.
+- ⚡ **Akıllı Scroll Sistemi:** Google Maps "Infinite Scroll" (Sonsuz Kaydırma) özelliğini simüle eden gelişmiş algoritma.
+- 🔍 **Web Sitesi Analizi:** İşletmenin web sitesine girer, E-posta adreslerini ve sosyal medya linklerini (LinkedIn, Instagram vb.) otomatik bulur.
+- 🚀 **Real-Time Takip:** Socket.io ile anlık işlem durumu, loglar ve ilerleme çubuğu.
+- 📊 **Excel Dışa Aktarım:** Bulunan verileri tek tıkla `.xlsx` formatında indirme.
+- 🎨 **Modern UI:** Tailwind CSS ile tasarlanmış, tamamen responsive "Dark Mode" arayüz.
+- 🛡️ **Bot Koruması:** User-Agent rotasyonu ve insansı davranış simülasyonları.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🛠️ Teknolojiler
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend:** [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [Tailwind CSS](https://tailwindcss.com/)
+- **Backend / API:** Next.js API Routes
+- **Scraping:** [Puppeteer](https://pptr.dev/) (Browser Automation), [Cheerio](https://cheerio.js.org/) (HTML Parsing)
+- **Real-Time:** [Socket.io](https://socket.io/)
+- **Veri İşleme:** [SheetJS (xlsx)](https://sheetjs.com/)
 
-## Learn More
+## 📦 Kurulum
 
-To learn more about Next.js, take a look at the following resources:
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+1. **Repoyu klonlayın:**
+   
+   ```bash
+   git clone https://github.com/KULLANICI_ADIN/firmalytics-pro.git
+   cd firmalytics-pro
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Bağımlılıkları yükleyin:**
+   
+   ```bash
+   npm install
+   # veya
+   yarn install
+   ```
 
-## Deploy on Vercel
+3. **Geliştirme sunucusunu başlatın:**
+   
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Tarayıcınızda **`http://localhost:3000`** adresine gidin.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## 🚀 Kullanım
+
+1. **Parametreleri Girin:** Sol panelden hedef konumu (Örn: "İstanbul") ve anahtar kelimeyi (Örn: "Yazılım Firmaları") girin.
+2. **Ayarları Seçin:** Taranacak maksimum sonuç sayısını belirleyin. E-posta taraması istiyorsanız seçeneği aktif edin.
+3. **Analizi Başlat:** "Analizi Başlat" butonuna basın.
+4. **İzleyin:** Sağ taraftaki log panelinden ve tablodan verilerin akışını izleyin.
+5. **Dışa Aktarın:** İşlem bittiğinde veya durdurduğunuzda sağ üstteki "Excel Aktar" butonunu kullanın.
+
+## ⚠️ Yasal Uyarı
+
+Bu proje yalnızca **eğitim ve araştırma amaçlı** geliştirilmiştir. Google Maps verilerini izinsiz ticari amaçla kullanmak veya sunucularını yormak Google'ın Hizmet Şartlarına aykırı olabilir. Kullanıcı, bu aracı kullanırken oluşabilecek yasal sorumlulukları kabul eder. Lütfen sorumlu bir şekilde kullanın.
+
+## 🤝 Katkıda Bulunma
+
+Katkılarınızı bekliyoruz! Bir sorun bulursanız "Issue" açabilir veya özellik eklemek için "Pull Request" gönderebilirsiniz.
+
+1. Forklayın
+2. Feature branch oluşturun (`git checkout -b feature/YeniOzellik`)
+3. Commit atın (`git commit -m 'Yeni özellik eklendi'`)
+4. Pushlayın (`git push origin feature/YeniOzellik`)
+5. Pull Request açın
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
+
+### Tavsiyeler:
+
+1. **Ekran Görüntüsü:** Kodun çalıştığı anın (tablo dolu, loglar akarken) güzel bir ekran görüntüsünü alıp, repona yükle ve README içindeki görsel linkini güncelle. Görsel, GitHub projelerinde ilgiyi %100 artırır.
+2. **Lisans Dosyası:** Repona `LICENSE` adında bir dosya ekleyip içine standart MIT lisans metnini yapıştırmayı unutma.
+3. **İngilizce Versiyon:** Eğer global kullanıcılara hitap etmek istersen, README dosyasının altına bir de İngilizce versiyonunu ekleyebilirsin.
